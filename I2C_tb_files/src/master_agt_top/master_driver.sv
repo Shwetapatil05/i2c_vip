@@ -113,6 +113,7 @@ task master_driver::run_phase(uvm_phase phase);
       end
   join_none
 
+  forever
     begin
  	    seq_item_port.get_next_item(req);
 	    drive_to_dut(req);
